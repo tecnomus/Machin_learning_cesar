@@ -1,6 +1,6 @@
 
 #! Estos valores son lo correspondiente a las habilidad del pokémon
-X = [
+x = [
     [2, 5],
     [4, 6],
     [6, 7]

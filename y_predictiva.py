@@ -1,13 +1,10 @@
 
 import values_xwyalpha as values
+import numpy as np
 
 #!Esto corresponde a cuanto espero que aprenda realmente el pokémon despues de los combates
-y_hat = []
+x_np = np.array(values.x)
+w_np = np.array(values.w)
 
-for i in range(3):          # 3 filas
-    valor = 0
-    for j in range(2):      # 2 columnas
-        valor = valor + values.X[i][j] * values.w[j]
-    y_hat.append(valor)
-
-#print("y_hat =", y_hat)
+y_hat = np.dot(x_np,w_np)
+#print(y_hat)
